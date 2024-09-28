@@ -159,6 +159,13 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+/* added during recording */
 .underline {
   background-color: var(--clr-primary-5);
   height: 0.25rem;
@@ -171,13 +178,9 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
+.bg-grey {
+  background: var(--clr-grey-10);
 }
-/* added during recording */
-
 /*
 =============== 
 Navbar
@@ -341,6 +344,7 @@ Hero
 .hero-img {
   display: none;
 }
+
 .hero-center {
   height: calc(100vh - 5rem);
   display: grid;
@@ -428,6 +432,49 @@ Services
 */
 /* small screen layout setup */
 /* bg-grey in globals */
+.service {
+  background: var(--clr-white);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.service-content {
+  align-self: center;
+}
+.service:hover {
+  background: var(--clr-primary-5);
+}
+.service:hover i {
+  color: var(--clr-white);
+}
+.service:hover h3 {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+
+.service-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 35px;
+  height: 1px;
+}
+/* (1170-32*2)/3= 368.5*/
+.services-center {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368.6px, 1fr));
+}
 
 /*
 =============== 
