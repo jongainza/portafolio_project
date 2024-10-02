@@ -849,6 +849,22 @@ Blog
 Footer
 ===============
 */
+.footer {
+  background: #222;
+  display: grid;
+  place-items: center;
+  padding-bottom: 1rem;
+  padding-top: 0.5;
+}
+.footer .social-icon i {
+  color: var(--clr-primary-5);
+}
+.footer .social-icons {
+  margin-bottom: 1rem;
+}
+.footer .social-icon i:hover {
+  color: var(--clr-primary-10);
+}
 /*
 =============== 
 Single Page
